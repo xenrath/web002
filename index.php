@@ -1,1 +1,1 @@
-index.php
+Hello World <a href="auth/logout.php">Logout</a>
