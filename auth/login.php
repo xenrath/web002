@@ -1,6 +1,10 @@
 <?php 
     require_once "../config/config.php";
+    if (isset($_SESSION['user'])) {
+        echo "<script>window.location='".base_url()."';</script>";
+    }else{
  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,3 +65,7 @@
     <script type="text/javascript" src="<?= base_url('assets/js/bootstrap.min.js'); ?>"></script>
 </body>
 </html>
+
+<?php 
+    }
+ ?>
