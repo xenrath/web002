@@ -1,5 +1,6 @@
 <?php 
     require_once "config/config.php";
+    require "assets/libs/vendor/autoload.php";
     if (!isset($_SESSION['user'])) {
         echo "<script>window.location='".base_url('auth/login.php')."';</script>";
     }
