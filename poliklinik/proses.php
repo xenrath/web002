@@ -20,10 +20,12 @@
 			echo "<script>alert('Gagal tambah data coba lagi'); window.location='generate.php';</script>";			
 		}
 	}else if (isset($_POST['edit'])) {
-		$id = $_POST['id'];
-		$nama = trim(mysqli_real_escape_string($con, $_POST['nama']));
-		$ket = trim(mysqli_real_escape_string($con, $_POST['ket']));
-		mysqli_query($con, "UPDATE tb_obat SET nama_obat = '$nama', ket_obat = '$ket' WHERE id_obat = '$id'") or die (mysqli_error($con));
-		echo "<script>window.location='data.php';</script>";
+		for ($i=0; $i < count($_POST['id']); $i++) {
+			$id = $_POST['id'][$i];
+			$nama = $_POST['nama'][$i];
+			$gedung = $_POST['gedung'][$i];	
+			mysqli_query($con, "UPDATE tb_poliklinik SET nama_poli = '$nama', gedung = '$gedung' WHERE id_poli = '$id'") or die (mysqli_error($con));
+		}
+		echo "<script>alert('Data berhasil diupdate'); window.location='data.php';</script>";
 	}
  ?>
