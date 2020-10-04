@@ -37,7 +37,7 @@
 	    			<a href="<?= base_url('dashboard'); ?>">Dashboard</a>
 	    		</li>
 	    		<li>
-	    			<a href="">Data Pasien</a>
+	    			<a href="<?= base_url('pasien/data.php') ?>">Data Pasien</a>
 	    		</li>
 	    		<li>
 	    			<a href="<?= base_url('dokter/data.php') ?>">Data Dokter</a>
