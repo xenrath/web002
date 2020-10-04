@@ -20,10 +20,13 @@
     <!-- Simple Sidebar CSS -->
     <link href="<?= base_url('assets/css/simple-sidebar.css') ?>" rel="stylesheet">
     <link rel="icon" href="<?= base_url('assets/rumahsakit.png') ?>">
+    <!-- DataTables -->
+    <link href="<?= base_url('assets/libs/DataTables/datatables.min.css') ?>" rel="stylesheet">
 </head>
 <body>
 	<script type="text/javascript" src="<?= base_url('assets/js/jquery.js'); ?>"></script>
     <script type="text/javascript" src="<?= base_url('assets/js/bootstrap.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?= base_url('assets/libs/DataTables/datatables.min.js') ?>"></script>
     <div id="wrapper">
 	    <div id="sidebar-wrapper">
 	    	<ul class="sidebar-nav">
