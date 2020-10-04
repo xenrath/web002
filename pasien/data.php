@@ -12,10 +12,9 @@
 		</div>
 	</h4>
 	<div class="table-responsive">
-		<table class="table table-striped table-bordered table-hover">
+		<table class="table table-striped table-bordered table-hover" id="pasien">
 			<thead>
 				<tr>
-					<th>No.</th>
 					<th>Nomor Identitas</th>
 					<th>Nama Pasien</th>
 					<th>Jenis Kelamin</th>
@@ -26,6 +25,24 @@
 			</thead>
 		</table>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#pasien').DataTable( {
+		        "processing": true,
+		        "serverSide": true,
+		        "ajax": "pasien_data.php",
+		        columnDefs : [{
+		        	"searchable" : false,
+		        	"orderable" : false,
+		        	"targets" : 5,
+		        	"render" : function(data, type, row){
+		        		var btn = "<center><a href=\"edit.php?id="+data+"\" class=\"btn btn-warning btn-xs\"><i class=\"glyphicon glyphicon-edit\"></i></a> <a href=\"del.php?id="+data+"\" onclick=\"return confirm('Yakin menghapus data ini?')\" class=\"btn btn-danger btn-xs\"><i class=\"glyphicon glyphicon-trash\"></i></a></center>";
+		        		return btn;
+		        	}
+		        }]
+		    } );
+		} );
+	</script>
 </div>
 
 <?php 
