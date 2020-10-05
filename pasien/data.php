@@ -31,6 +31,18 @@
 		        "processing": true,
 		        "serverSide": true,
 		        "ajax": "pasien_data.php",
+		        scrollY : '300px',
+		        dom : 'Bfrtip',
+		        buttons : [
+		        {
+		        	extend : 'pdf',
+		        	orientation : 'potrait',
+		        	pageSize : 'Legal',
+		        	title : 'Data Pasien',
+		        	download : 'open'
+		        },
+		        'csv', 'excel', 'print', 'copy'
+		        ],
 		        columnDefs : [{
 		        	"searchable" : false,
 		        	"orderable" : false,
