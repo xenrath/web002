@@ -42,7 +42,7 @@
 				</div>
 				<div class="form-group">
 					<label for="diagnosa">Diagnosa</label>
-					<textarea name="diagnosa" id="diagnosa" class="form-control" required></textarea>
+					<textarea name="diagnosa" id="diagnosa" class="form-control" rows="4" required></textarea>
 				</div>
 				<div class="form-group">
 					<label for="poli">Poliklinik</label>
@@ -76,6 +76,11 @@
 					<input type="reset" name="reset" value="Reset" class="btn btn-default">
 				</div>
 			</form>
+			<script>
+				CKEDITOR.replace( 'keluhan', {
+					uiColor: '#ec971f'
+				});
+			</script>
 		</div>
 	</div>
  </div>

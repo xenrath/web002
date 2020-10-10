@@ -27,6 +27,7 @@
 	<script type="text/javascript" src="<?= base_url('assets/js/jquery.js'); ?>"></script>
     <script type="text/javascript" src="<?= base_url('assets/js/bootstrap.min.js'); ?>"></script>
     <script type="text/javascript" src="<?= base_url('assets/libs/DataTables/datatables.min.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('assets/libs/vendor/ckeditor/ckeditor/ckeditor.js') ?>"></script>
     <div id="wrapper">
 	    <div id="sidebar-wrapper">
 	    	<ul class="sidebar-nav">

@@ -54,6 +54,50 @@
         ]
     },
     {
+        "name": "ckeditor/ckeditor",
+        "version": "4.15.0",
+        "version_normalized": "4.15.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ckeditor/ckeditor4-releases.git",
+            "reference": "f233b056a20528c442576e661486170a7d84a7b9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ckeditor/ckeditor4-releases/zipball/f233b056a20528c442576e661486170a7d84a7b9",
+            "reference": "f233b056a20528c442576e661486170a7d84a7b9",
+            "shasum": ""
+        },
+        "time": "2020-09-07T13:41:04+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+",
+            "LGPL-2.1+",
+            "MPL-1.1+"
+        ],
+        "authors": [
+            {
+                "name": "CKSource",
+                "homepage": "https://cksource.com"
+            }
+        ],
+        "description": "JavaScript WYSIWYG web text editor.",
+        "homepage": "https://ckeditor.com/ckeditor-4/",
+        "keywords": [
+            "CKEditor",
+            "ckeditor4",
+            "editor",
+            "fckeditor",
+            "html",
+            "javascript",
+            "richtext",
+            "text",
+            "wysiwyg"
+        ]
+    },
+    {
         "name": "phpoffice/phpexcel",
         "version": "1.8.2",
         "version_normalized": "1.8.2.0",
